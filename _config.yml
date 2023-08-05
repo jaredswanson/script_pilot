@@ -18,21 +18,30 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: ScriptPilot
+email: jared@scriptpilot.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Chart Your Course to Success with ScriptPilot!
+  Join me on an exciting expedition through the world of programming. 
+  Gain valuable coding wisdom, explore hands-on tutorials, 
+  and uncover the latest tools to reach new heights in your developer journey."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://scriptpilot.dev" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+github_username:  jaredswanson
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# For posts under "learn" category
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /learn/:slug/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
